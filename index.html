@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f67495d90a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wiki-pedia-bg-container pt-5 pl-3 pb-3 pr-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+    
+                    <div class=" d-block d-sm-none pb-5">
+                        <img src="https://i.postimg.cc/FFdN51sp/wikiglobe.png" class="wikipedia-logo" />
+                    </div>
+    
+                    <div class="pl-5  text-left ">
+                        <h1 class="wikipedia-title mt-5">Wikipedia</h1>
+                        <p class="about-wikipedia ">
+                            Wikipedia is a free online encyclopedia that provides information on a wide range of topics.
+                        </p>
+                        <input type="search" id="userInput" class="user-input" placeholder="Search In Wikipedia..." />
+                    </div>
+    
+                </div>
+                <div class="col-6">
+                    <div class="pt-5 d-none d-sm-block">
+                        <img src="https://i.postimg.cc/FFdN51sp/wikiglobe.png" class="wikipedia-logo" />
+                    </div>
+                </div>
+    
+                <div class="col-12 pt-5">
+                    <hr class="line" />
+                    <div class="d-none" id="spinner">
+                        <div class="d-flex justify-content-center">
+                            <div class="spinner-border" role="status">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result-container" id="resultContainer">
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+   <script src = "script.js"></script>
+</body>
+</html>
