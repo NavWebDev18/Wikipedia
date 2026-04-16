@@ -54,6 +54,10 @@ function displaySearchResults(jsonData) {
 
 function searchWikipedia(event) {
     if (event.key === "Enter") {
+        if(event.target.value === ""){
+            alert("Enter valid Input value to get results");
+            return;
+        }
         spinner.classList.remove("d-none");
         resultContainer.textContent = "";
         let searchValue = searchInput.value;
